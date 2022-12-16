@@ -1,0 +1,145 @@
+﻿{
+  "Buttons": {
+    "OK": "OK",
+    "Buy": "Bestellen",
+    "BuyMain": "Das Spiel bestellen",
+    "More": "Mehr",
+    "Contact": "Kontakt",
+    "Subscribe": "Abonnieren"
+  },
+  "Navigation": {
+    "About": "Spielbeschreibung",
+    "Target": "Für wen geeignet?",
+    "Skills": "Fähigkeiten",
+    "Gallery": "Galerie",
+    "Reviews": "Bewertungen",
+    "Faq": "FAQ"
+  },
+  "Footer": {
+    "contacts": "Kontakt",
+    "navigation": "Navigation",
+    "text": "",
+    "copyright": "Urheberrecht",
+    "subscribe": "Abonnieren",
+    "description": "«Magic-phone» ist ein intellektuelles und lehrreiches Spiel für Kinder"
+  },
+  "Cart": {
+    "name": "Name",
+    "email": "e-mail",
+    "phone": "Telefon",
+    "address": "Anschrift",
+    "complete": "Bestellung abschließen",
+    "header": "Ihre Bestellung",
+    "position": "«Magic-phone» Spiel"
+  },
+  "About": {
+    "Headers": {
+      "what": "Über Magic-phone",
+      "who": "Für wen eignet sich das Spiel?",
+      "skills": "Welche Fähigkeiten verbessert das Spiel",
+      "order": "Bestellen",
+      "reviews": "Bewertungen"
+    },
+    "Main": {
+      "pre": "Lernspiel «Magic-phone»",
+      "header": "Ihr Kind wird mit Freude lesen lernen!",
+      "text": "«Magic-phone» — ist ein intellektuelles und lehrreiches Spiel für Kinder"
+    },
+    "WhatIs": {
+      "text1": "«Magic-Phone» ist ein Lernspiel für Kinder, das nicht nur die Fähigkeiten des richtigen Lesens und Schreibens schult, sondern dem Kind auch das selbstständige Spielen ohne Mitwirkung von Erwachsenen ermöglicht.",
+      "text2": "Das Hauptset des Spiels besteht aus 5 Karten mit bunten Bildern. Eine der Karten ist die Basis, auf der die Scheibe angebracht ist. Weitere Kartensätze mit verschiedenen Themen und Regeln der russischen Sprache sind in Entwicklung.",
+      "text3": "Außerdem wird das Spiel demnächst auf Deutsch und Englisch präsentiert.",
+      "fact1": "Am Spiel können beliebig viele Kinder teilnehmen",
+      "fact2": "Ausgangsposition - der Pfeil zeigt in die untere rechte Ecke (Pfeil unter dem Begrenzer)",
+      "fact3": "Das Kind wählt ein Wort aus der Liste auf dem Blatt aus und tippt es nacheinander Buchstabe für Buchstabe in das Telefon ein, wobei es seinen Finger jedes Mal in die Ausgangsposition bringt",
+      "fact4": "Hurra! Der Pfeil zeigte auf das Bild, das dem ausgewählten Wort entspricht. Das Wort wurde also richtig eingegeben",
+      "fact5": "Wenn der Pfeil vor einem anderen Bild stoppt, liegt ein Fehler vor. Sie müssen das Wort erneut eingeben"
+    },
+    "Who": {
+      "Kid1": {
+        "name": "Von 0 bis 2 Jahren",
+        "text": "Buchstaben schnell lernen und Spaß haben"
+      },
+      "Kid2": {
+        "name": "von 2 bis 3 Jahren",
+        "text": "Wörter lernen"
+      },
+      "Kid3": {
+        "name": "ab 3 Jahren",
+        "text": "Lesen lernen"
+      }
+    },
+    "FAQ": {
+      "Question1": {
+        "Title": "Für welches Alter ist das «Magic-Phone» geeignet?",
+        "Answer": "Das Spiel ist für die Kinder ab 3 Jahren geeignet. Es Hängt davon ab, wann das Kind mit dem Erlernen des russischen Alphabets beginnt."
+      },
+      "Question2": {
+        "Title": "Wie lange dauert es, bis mein Kind lesen lernt?",
+        "Answer": "Das genaue Datum können wir noch nicht festlegen, aber das Ergebnis lässt nicht lange auf sich warten!"
+      },
+      "Question3": {
+        "Title": "Wie kann ich eine Bestellung durchfüren?",
+        "Answer": "Eine Bestellung kann über ein spezielles Formular auf der Website durchgefürt werden. Nach Bestätigung der Bestellung wird ein Beleg an Ihre E-Mail gesendet."
+      },
+      "Question4": {
+        "Title": "Ich habe keinen Beleg erhalten. Was ist zu tun?",
+        "Answer": "Bitte kontaktieren Sie uns über das Kontaktformular. Wir werden versuchen, dieses Problem so schnell wie möglich zu beheben."
+      },
+      "Question5": {
+        "Title": "Wie und wo erfolgt die Lieferung?",
+        "Answer": "Wir liefern das «Magic-Phone» an die Adresse, die Sie während des Bestellvorgangs angegeben haben. Bei der Auftragsbestätigung geben wir die Lieferzeiten an. Im Durchschnitt dauert die Lieferung je nach Standort von 2 bis 7 Tage."
+      }
+    },
+    "Skills": {
+      "skill1": "Entwickelt Aufmerksamkeit und Gedächtnis des Kindes",
+      "skill2": "Verbessert seinen Wortschatz",
+      "skill3": "Hilft, die Grundregeln der russischen Sprache zu lernen",
+      "skill4": "Bildet die Fähigkeiten des richtigen Lesens und Schreibens",
+      "skill5": "Lenkt das Kind vom Computerbildschirm und vom Telefon ab",
+      "skill6": "Erleichtert das einfache Auswendiglernen von Buchstaben in alphabetischer Reihenfolge",
+      "skill7": "Das Kind lernt selbstständig spielend ohne Mitwirkung von Erwachsenen",
+      "skill8": "Rechtschreibkenntnisse werden auf zugängliche und unterhaltsame Weise erlernt"
+    },
+    "Reviews": {
+      "Review1": {
+        "name": "Ivan",
+        "rank": "Vater von 3 Kindern",
+        "text": "Mein Sohn (4 Jahre alt) spielt gerne mit dem Magic-Phone und freut sich jedes Mal sehr, wenn der Pfeil richtig auf das Bild zeigt. Er kann noch nicht selbst spielen, aber aus der Fülle der anderen Spiele wählt er dieses!"
+      },
+      "Review2": {
+        "name": "Elena",
+        "rank": "Mutter von 3 Kindern",
+        "text": "Vielen Dank für so ein spannendes Spiel! ❤️ Ich habe es nie bereut, meiner Tochter ein wundervolles Handy gekauft zu haben. Sie ist 6 Jahre alt, wir sprechen zu Hause Deutsch, so dass das Kind praktisch kein Russisch hört. Ich beschloss, dieses Spiel auszuprobieren und meine Tochter begann endlich, Silben in Worte zu fassen! Vorher habe ich verschiedene andere Methoden ausprobiert, jedoch ohne Erfolg.. Generell rate ich ab! \uD83D\uDC4D\uD83C\uDFFC"
+      },
+      "Review3": {
+        "name": "Irina",
+        "rank": "Mutter von 2 Kindern",
+        "text": "Wir spielen jetzt seit einem Monat mit dem Magic-Phone und das Kind hat richtig angefangen zu lesen! Sie nimmt es als Spiel wahr, nicht als Aktivität. Davor war das Erlernen des Alphabets eine Qual, jetzt schleppt er sich, will spielen. Und ich bin einfach nur froh\uD83D\uDE05 Ich versuche die Buchstaben mit ihm vor dem Tippen laut auszusprechen, wiederholt er mir nach. Wundertelefon ist super, danke! \uD83D\uDE4F\uD83C\uDFFC"
+      }
+    }
+    },
+    "Form": {
+      "name": "Name",
+      "email": "e-mail",
+      "phone": "Telefon",
+      "address": "Anschrift",
+      "comments": "Bewertungen",
+      "header": "Teilen Sie uns von Ihren Wünschen",
+      "text": "Sie können uns jederzeit kontaktieren und Ihre Fragen stellen. Darüber hinaus berücksichtigen wir gerne Ihre Wünsche und Anmerkungen."
+    },
+    "Messages": {
+      "SwipeRight": "Rechts wischen",
+      "SwipeLeft": "Links wischen",
+      "OrderCompleted": "Ihre Bestellung wurde erfolgreich abgeschlossen",
+      "OrderText": "Vielen Dank für Ihre Bestellung! Wir werden uns in Kürze mit Ihnen in Verbindung setzen, um die Informationen zu bestätigen.",
+      "ContactSuccessful": "Ihre Anfrage wurde erfolgreich abgeschlossen",
+      "NewsletterCompleted": "Vielen Dank, dass Sie unsere Updates abonniert haben!"
+    },
+    "Errors": {
+      "order": "Beim Bezahlen haben wir ein Problem festgestellt. Versuchen Sie es später noch einmal.",
+      "newsletter": "Fehler beim Abonnieren :( Leider haben wir ein Problem festgestellt.",
+      "contacts": "Wir konnten Ihre Anfrage aus technischen Gründen nicht annehmen :(",
+      "input": "Bitte geben Sie die richtigen Daten ein"
+    }
+  }

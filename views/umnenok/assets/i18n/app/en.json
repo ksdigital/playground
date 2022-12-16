@@ -1,0 +1,145 @@
+{
+  "Buttons": {
+    "OK": "OK",
+    "Buy": "Buy",
+    "BuyMain": "Buy the game",
+    "More": "More",
+    "Contact": "Contact us",
+    "Subscribe": "Subscribe"
+  },
+  "Navigation": {
+    "About": "About",
+    "Target": "For whom",
+    "Skills": "Skills",
+    "Gallery": "Gallery",
+    "Reviews": "Reviews",
+    "Faq": "FAQ"
+  },
+  "Footer": {
+    "contacts": "Contacts",
+    "navigation": "Navigation",
+    "text": "",
+    "copyright": "powered by ",
+    "subscribe": "Newsletter",
+    "description": "«Magic-phone» is an intellectual and educational game for children"
+  },
+  "Cart": {
+    "name": "Name",
+    "email": "e-mail",
+    "phone": "Phone",
+    "address": "Address",
+    "complete": "Proceed to checkout",
+    "header": "Your order",
+    "position": "«Magic-phone» game"
+  },
+  "About": {
+    "Headers": {
+      "what": "About the game",
+      "who": "Who is it for",
+      "skills": "What skills does it improve",
+      "order": "Make an order",
+      "reviews": "Reviews"
+    },
+    "Main": {
+      "pre": "Educational game «Magic-phone»",
+      "header": "Your child will learn to read with pleasure!",
+      "text": "Magic-phone is an intellectual and educational game for children"
+    },
+    "WhatIs": {
+      "text1": "«Magic-phone» is an educational game for children which not only develops the skills of correct reading and writing but also allows the child to learn independently while playing the game and without adults' involvement.",
+      "text2": "The main set of the game consists of 5 cards with colorful pictures. One of the cards is the base with the disc which is mounted on it. There are additional sets of cards with various topics and rules of the Russian language coming soon.",
+      "text3": "Also, the game will be soon presented in German and English.",
+      "fact1": "Any number of children can take part in the game",
+      "fact2": "Starting position - the arrow is directed to the lower right corner (arrow under the limiter)",
+      "fact3": "The child chooses a word from the list and sequentially, letter by letter, types it on the phone, each time bringing their finger to the starting position",
+      "fact4": "Hooray! The arrow pointed to the picture that corresponds to the selected word. So the word was typed correctly",
+      "fact5": "If the arrow stops in front of another picture, it means, a mistake has been made. You need to retype the word"
+    },
+    "Who": {
+      "Kid1": {
+        "name": "for 0-2 years old",
+        "text": "Learn letters the fast and fun way"
+      },
+      "Kid2": {
+        "name": "for 2-3 years old",
+        "text": "Learn the words"
+      },
+      "Kid3": {
+        "name": "for 3+ years old",
+        "text": "Learn to read"
+      }
+    },
+    "FAQ": {
+      "Question1": {
+        "Title": "What age is the «Magic-phone» suitable for?",
+        "Answer": "The game is designed for children 3+ years old depending on the time they begin to learn the Russian alphabet."
+      },
+      "Question2": {
+        "Title": "How long does it take for my child to learn to read?",
+        "Answer": "We can't set the exact time but the result shouldn't be much longer!"
+      },
+      "Question3": {
+        "Title": "How to make an order?",
+        "Answer": "An order can be made through the special form on the web-site. After confirming the order the check will be sent to you by e-mail."
+      },
+      "Question4": {
+        "Title": "I didn't receive the check. What should I do?",
+        "Answer": "Please contact us via the contact form. We will try to resolve this issue as soon as possible."
+      },
+      "Question5": {
+        "Title": "What is the delivery process?",
+        "Answer": "We will deliver the «Magic-phone» to the address you provided when making an order. While confirming the order, we will specify the delivery time. Normally, delivery takes from 2 to 7 days depending on location."
+      }
+    },
+    "Skills": {
+      "skill1": "Develops attention and memory of the child",
+      "skill2": "Boosts child's vocabulary",
+      "skill3": "Helps to learn the basic rules of the Russian language",
+      "skill4": "Develops the skills of correct reading and writing",
+      "skill5": "Draws child's attention away from computer and phone screen",
+      "skill6": "Helps to easily remember letters in alphabetical order",
+      "skill7": "Child learns independently during the game without adults' involvement",
+      "skill8": "Spelling skills are being learnt in an accessible and entertaining way"
+    },
+    "Reviews": {
+      "Review1": {
+        "name": "Ivan",
+        "rank": "father of 3 children",
+        "text": "My son (4 y.o.) enjoys playing the Magic-phone and every time the arrow points to the picture correctly, he gets really excited. He can't play by himself yet but he chooses only this game instead of many others!"
+      },
+      "Review2": {
+        "name": "Elena",
+        "rank": "mother of 3 children",
+        "text": "Thank you very much for such an entertaining game! â¤ï¸ I never regretted that I bought my daughter the Magic phone. She is 6 years old, at home we speak German, so she barely hears Russian words. I decided to try this game and my daughter, finally, began to put syllables into words!  Before that I tried lots of other methods but no results at all .. In general, I recommend this game ! \uD83D\uDC4D\uD83C\uDFFC"
+      },
+      "Review3": {
+        "name": "Irina",
+        "rank": "mother of 2 children",
+        "text": "We've been playing the Magic-phone for a month now, and the child really started to read! He perceives it as a game, not as an exercise. Earlier learning the alphabet was a challenge, now he is genuinely interested in it and wants to play. And I'm very glad\uD83D\uDE05 I'm trying to pronounce the letters with him out loud before typing, he repeats after me. Magic phone is great, thank you! \uD83D\uDE4F\uD83C\uDFFC"
+      }
+    }
+  },
+  "Form": {
+    "name": "Name",
+    "email": "email",
+    "phone": "Phone",
+    "address": "Address",
+    "comments": "Comments",
+    "header": "Tell us about your wishes",
+    "text": "You can contact us at any time and ask your questions. Also, we are always happy to consider your wishes and comments."
+  },
+  "Messages": {
+    "SwipeRight": "Swipe right",
+    "SwipeLeft": "Swipe left",
+    "OrderCompleted": "Your order has been successfully completed",
+    "OrderText": "Thank you for making your order! We will contact you as soon as possible to confirm the information.",
+    "ContactSuccessful": "Your request has been successfully completed",
+    "NewsletterCompleted": "Thank you for subscribing!"
+  },
+  "Errors": {
+    "order": "An error occurred during checkout. Try again later",
+    "newsletter": "Error in subscribing:( We may have a problem",
+    "contacts": "We were unable to accept your request for technical reasons :(",
+    "input": "Please enter correct data"
+  }
+}
