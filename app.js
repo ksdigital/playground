@@ -19,7 +19,7 @@ app.use(express.static('views/meleb'))
 app.use(express.static('views/umnenok'))
 // app.use(express.static('views/tickets'))
 app.use(express.static('views/inquisitor'))
-// app.use(express.static('views/certs'))
+app.use(express.static('views/certs'))
 
 app.get('meleb', (req, res) => {
 
@@ -67,6 +67,15 @@ app.get('/inquisitor', (req, res) => {
 //     )
 // })
 
+app.get('certs', (req, res) => {
+
+
+    res.sendFile(
+        path.resolve(
+            __dirname, 'views', 'certs', 'index.html'
+        )
+    )
+})
 const httpsApp = https.createServer(cert, app)
 
 

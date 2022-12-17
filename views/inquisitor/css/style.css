@@ -1,3 +1,17 @@
+.noselect {
+  outline: none !important;
+  border: none !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noselect *:focus {
+  outline: 0;
+  outline: none;
+}
+
 @font-face {
   font-family: Stolzl;
   src: url("../fonts/Stolzl-Bold.ttf");
@@ -20,12 +34,12 @@ body {
   font-family: Stolzl;
 }
 
-html {
-  background-image: url(01.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+.container {
+  padding: 0;
+}
+
+.gold {
+  color: #e2c087;
 }
 
 .navbar {
@@ -34,22 +48,21 @@ html {
   justify-content: center;
 }
 
-.gold {
-  color: #e2c087;
-}
-
-.container-fluid {
+.navbar_content {
   background: #202020;
+  display: flex;
+  justify-content: space-between;
 }
-.container-fluid .navbar-brand {
+.navbar_content .name {
   margin-right: 1rem;
+  white-space: normal;
 }
-.container-fluid .navbar-brand .text_info {
+.navbar_content .name .name_info {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.5490196078);
   font-weight: light;
 }
-.container-fluid .logo {
+.navbar_content .logo {
   width: 50px;
 }
 
@@ -74,6 +87,7 @@ html {
 .wrapper-contacts {
   background: #202020;
   text-align: center;
+  vertical-align: middle;
   display: flex;
   flex-direction: column;
 }
@@ -112,44 +126,90 @@ html {
   color: #e2c087;
 }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-  position: relative;
-}
-
-@media (max-width: 1199.98px) {
-  .container {
-    width: 960px;
-  }
-}
-@media (max-width: 991.98px) {
-  .container {
-    width: 720px;
-  }
-}
 @media (max-width: 767.98px) {
-  .container {
-    width: 540px;
+  .navbar_burger {
+    margin-right: 0.4rem;
   }
-  .navbar-brand {
-    font-size: 16px;
+  .name {
+    margin-top: 1rem;
+    font-size: 1rem;
   }
-  .text_info {
+  .name .name_1, .name .name_2 {
+    display: block;
+  }
+  .name_info {
     display: none;
   }
   .tel_num {
-    font-size: 14px;
-  }
-  p {
-    width: 200px;
+    font-size: 0.8rem;
   }
   .wrapper-contacts__icons-box {
     display: none;
   }
 }
 @media (max-width: 575.98px) {
-  .container {
-    width: 100%;
+  .navbar_burger {
+    margin-right: 0.4rem;
+  }
+  .navbar_content {
+    padding: 0;
+  }
+  .name {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0;
+  }
+  .name .name_1, .name .name_2 {
+    display: block;
+  }
+  .name_info {
+    display: none;
+  }
+  .tel_num {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 487px) {
+  .navbar_burger {
+    margin-right: 0.4rem;
+  }
+  .name {
+    font-size: 0.75rem;
+  }
+  .name .name_1, .name .name_2 {
+    display: block;
+  }
+  .tel_num {
+    font-size: 0.65rem;
+  }
+  .tel_icon {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .navbar_burger {
+    margin-right: 0.4rem;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .logo {
+    width: 40px;
+  }
+  .name {
+    width: 90px;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .name .name_1, .name .name_2 {
+    display: block;
+  }
+  .tel_num {
+    font-size: 0.65rem;
+  }
+  .tel_icon {
+    font-size: 0.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
