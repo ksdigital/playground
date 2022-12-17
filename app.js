@@ -21,7 +21,7 @@ app.use(express.static('views/umnenok'))
 app.use(express.static('views/inquisitor'))
 app.use(express.static('views/certs'))
 
-app.get('meleb', (req, res) => {
+app.get('/meleb', (req, res) => {
 
 
     res.sendFile(
@@ -67,7 +67,7 @@ app.get('/inquisitor', (req, res) => {
 //     )
 // })
 
-app.get('certs', (req, res) => {
+app.get('/certs', (req, res) => {
 
 
     res.sendFile(
