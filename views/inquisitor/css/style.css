@@ -30,16 +30,31 @@
   font-weight: regular;
   font-style: normal;
 }
+.gold {
+  color: #e2c087;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.main-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5490196078);
+  font-weight: regular;
+}
+
 body {
   font-family: Stolzl;
+  background: url(../img/17.jpg) center/cover no-repeat;
 }
 
 .container {
   padding: 0;
 }
 
-.gold {
-  color: #e2c087;
+.main-header {
+  margin-bottom: 80px;
 }
 
 .navbar {
@@ -49,7 +64,7 @@ body {
 }
 
 .navbar_content {
-  background: #202020;
+  background: #040404;
   display: flex;
   justify-content: space-between;
 }
@@ -85,7 +100,7 @@ body {
 }
 
 .wrapper-contacts {
-  background: #202020;
+  background: #040404;
   text-align: center;
   vertical-align: middle;
   display: flex;
@@ -113,7 +128,7 @@ body {
   align-items: center;
   width: 30px;
   height: 30px;
-  background-color: #202020;
+  background-color: #040404;
   border: 1px solid #e2c087;
   border-radius: 100px;
   margin-right: 17px;
@@ -126,7 +141,49 @@ body {
   color: #e2c087;
 }
 
+.article {
+  height: 480px;
+}
+
+.article_bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../img/main1.jpg) left/cover no-repeat;
+  position: relative;
+}
+
+h1 {
+  width: 60%;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 2.5rem 0 0 1rem;
+}
+
+.article-text {
+  width: 50%;
+}
+
+.main_btn {
+  background-color: #e2c087;
+  color: #040404;
+  border-radius: 15px;
+}
+
+.main_btn:hover {
+  box-shadow: 0 0 5px 5px rgba(226, 192, 135, 0.45);
+}
+
+.main-items {
+  width: 60%;
+}
+
+.item-text {
+  font-size: 14px;
+}
+
 @media (max-width: 767.98px) {
+  .main-header {
+    margin-bottom: 3rem;
+  }
   .navbar_burger {
     margin-right: 0.4rem;
   }
@@ -148,6 +205,9 @@ body {
   }
 }
 @media (max-width: 575.98px) {
+  .main-header {
+    margin-bottom: 3rem;
+  }
   .navbar_burger {
     margin-right: 0.4rem;
   }
@@ -170,6 +230,9 @@ body {
   }
 }
 @media (max-width: 487px) {
+  .main-header {
+    margin-bottom: 2rem;
+  }
   .navbar_burger {
     margin-right: 0.4rem;
   }
@@ -187,12 +250,15 @@ body {
   }
 }
 @media (max-width: 375px) {
+  .main-header {
+    margin-bottom: 1rem;
+  }
   .navbar_burger {
     margin-right: 0.4rem;
   }
   .navbar {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
   .logo {

@@ -31,18 +31,29 @@
     font-style: normal
 
 $color-gold: #e2c087
-$color-black: #202020
+$color-black: #040404
 $color-white: #ffffff
 $color-gray: #ffffff8c
 
+.gold
+    color: $color-gold
+.white
+    color: $color-white
+
+.main-text
+    font-size: 1rem
+    color: $color-gray
+    font-weight: regular
+
 body
     font-family: Stolzl
+    background: url(../img/17.jpg) center/cover no-repeat
 
 .container
     padding: 0
 
-.gold
-    color: $color-gold
+.main-header
+    margin-bottom: 80px
 
 .navbar
     padding: 0
@@ -111,7 +122,40 @@ body
             font-size: 16px
             color: $color-gold
 
+.article
+    height: 480px
+
+.article_bg
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../img/main1.jpg) left/cover no-repeat
+    position: relative
+
+h1
+    width: 60%
+    font-size: 48px
+    font-weight: bold
+    color: $color-white
+    padding: 2.5rem 0 0 1rem
+
+.article-text
+    width: 50%
+
+.main_btn
+    background-color: $color-gold
+    color: $color-black
+    border-radius: 15px
+
+.main_btn:hover
+    box-shadow: 0 0 5px 5px rgba($color-gold, .45)
+
+.main-items
+    width: 60%
+
+.item-text
+    font-size: 14px
+
 @media (max-width: 767.98px)
+    .main-header
+        margin-bottom: 3rem
     .navbar_burger
         margin-right: .4rem
     .name
@@ -127,6 +171,8 @@ body
         display: none
 
 @media (max-width: 575.98px)
+    .main-header
+        margin-bottom: 3rem
     .navbar_burger
         margin-right: .4rem
     .navbar_content
@@ -143,6 +189,8 @@ body
         font-size: .80rem
 
 @media (max-width: 487px)
+    .main-header
+        margin-bottom: 2rem
     .navbar_burger
         margin-right: .4rem
     .name
@@ -155,11 +203,13 @@ body
         font-size: .5rem
 
 @media (max-width: 375px)
+    .main-header
+        margin-bottom: 1rem
     .navbar_burger
         margin-right: .4rem
     .navbar
         display: flex
-        flex-wrap: nowrap
+        flex-wrap: wrap
         justify-content: flex-start
     .logo
         width: 40px
