@@ -20,6 +20,7 @@ app.use(express.static('views/umnenok'))
 // app.use(express.static('views/tickets'))
 app.use(express.static('views/inquisitor'))
 app.use(express.static('views/certs'))
+app.use(express.static('views/ksd'))
 
 app.get('/meleb', (req, res) => {
 
@@ -27,6 +28,15 @@ app.get('/meleb', (req, res) => {
     res.sendFile(
         path.resolve(
             __dirname, 'views', 'meleb', 'index.html'
+        )
+    )
+})
+app.get('/ksd', (req, res) => {
+
+
+    res.sendFile(
+        path.resolve(
+            __dirname, 'views', 'ksd', 'index.html'
         )
     )
 })
