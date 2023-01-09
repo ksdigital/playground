@@ -47,7 +47,9 @@ $color-gray: #ffffff8c
 
 body
     font-family: Stolzl
-    background: url(../img/fon.jpg) center/cover no-repeat
+    background: url(../img/fon.jpg) center no-repeat
+    width: 100%
+    height: 100vh
 
 .container
     padding: 0
@@ -124,10 +126,10 @@ body
 
 .article_content
     height: 500px
-    // overflow: hidden
 
 .article_content_bg
-    background: linear-gradient(rgba(04, 04, 04, 0.6), rgba(04, 04, 04, 0.8)), url(../img/main.jpg) left/cover no-repeat
+    background: linear-gradient(rgba(04, 04, 04, 0.7), rgba(04, 04, 04, 0.9)), url(../img/main.jpg) right no-repeat
+    background-size: auto 120%
     position: relative
 
 .title
@@ -147,6 +149,7 @@ h1
     background-color: $color-gold
     color: $color-black
     border-radius: 15px
+    transition: all 0.3s
 
 .button:hover
     box-shadow: 0 0 5px 5px rgba($color-gold, .45)
@@ -175,12 +178,14 @@ h1
         margin-bottom: .8rem
     i
         font-size: 2.5rem
+    img
+        width: 3.5rem
 
 .title_2
     font-size: 2rem
     font-weight: light
     color: $color-gray
-    text-align: center
+    text-align: start
     margin: 0
 
 .second_section-title
@@ -222,7 +227,7 @@ h1
         margin-bottom: 1rem
         color: $color-gold
     .serv-link
-        color: $color-black
+        color: $color-gray
         text-decoration: none
         margin-bottom: 1rem
         visibility: hidden
@@ -236,9 +241,11 @@ h1
             border-radius: 7px
 
 .card::after
-    background: linear-gradient(45deg, $color-gray, $color-black)
-    box-shadow: 0 0 5px 5px rgba($color-gold, .45)
+    // background: linear-gradient(45deg, $color-gray, $color-black)
+    // box-shadow: 0 0 5px 5px rgba($color-gold, .45)
     color: $color-black
+    // box-shadow: 0 1px 1px 1px $color-gold, 0 2px 2px 2px $color-gold,  0 3px 3px 3px $color-gold
+    border: 2px solid $color-gold
     border-radius: 10px
     content: ""
     position: absolute
@@ -248,10 +255,12 @@ h1
     height: 100%
     width: 100%
     opacity: 0
-    transition: all 0.8s
+    transition: all 0.3s
 .card:hover::after
     opacity: 1
 .card:hover
+    webkit-transform: translateY(-9px)
+    transform: translateY(-9px)
     .card-title
         color: $color-white
     .serv-link
@@ -263,6 +272,11 @@ h1
 .third_section
     .main-text
         text-align: justify
+        margin: auto
+        
+    img
+        width: 300px
+        object-fit: contain
     .lic-link
             color: $color-white
             text-decoration: none
@@ -270,6 +284,25 @@ h1
     .lic-link:hover
         color: $color-gold
         text-decoration: underline
+
+.fourth_section-form
+    width: 40%
+    .form-control
+        background: none
+        color: $color-white
+        border-color: rgba($color-gray, .20)
+
+    .form-control:active, .form-control:focus
+        outline: rgba($color-gold, .95) solid .1rem
+        border: none
+    .text-form
+        color: $color-white
+
+.form-bg
+    background: linear-gradient(rgba(04, 04, 04, 0.9), rgba(04, 04, 04, 0.8)), url(../img/mes.jpg) right no-repeat
+    background-size: auto 105%
+
+
 
 @media (max-width: 767.98px)
     .main-header
@@ -287,6 +320,8 @@ h1
         font-size: .80rem
     .wrapper-contacts__icons-box
         display: none
+    .article_content_bg
+        background: linear-gradient(rgba(04, 04, 04, 0.5), rgba(04, 04, 04, 0.7)), url(../img/main.jpg) left/cover no-repeat
 
 @media (max-width: 575.98px)
     .main-header
@@ -305,6 +340,8 @@ h1
         display: none
     .tel_num
         font-size: .80rem
+    .article_content_bg
+        background: linear-gradient(rgba(04, 04, 04, 0.5), rgba(04, 04, 04, 0.7)), url(../img/main.jpg) left/cover no-repeat
 
 @media (max-width: 487px)
     .main-header
@@ -319,6 +356,8 @@ h1
         font-size: .65rem
     .tel_icon
         font-size: .5rem
+    .article_content_bg
+        background: linear-gradient(rgba(04, 04, 04, 0.5), rgba(04, 04, 04, 0.7)), url(../img/main.jpg) left/cover no-repeat
 
 @media (max-width: 375px)
     .main-header
@@ -341,3 +380,5 @@ h1
         font-size: .65rem
     .tel_icon
         font-size: .5rem
+    .article_content_bg
+        background: linear-gradient(rgba(04, 04, 04, 0.5), rgba(04, 04, 04, 0.7)), url(../img/main.jpg) left/cover no-repeat
