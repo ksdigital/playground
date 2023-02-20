@@ -58,6 +58,15 @@ app.get('/inquisitor', (req, res) => {
         )
     )
 })
+app.get('/inquisitor/:page', (req, res) => {
+
+    const page = req.params.page;
+    res.sendFile(
+        path.resolve(
+            __dirname, 'views', 'inquisitor', `${page}`
+        )
+    )
+})
 // app.get('tickets', (req, res) => {
 //
 //
