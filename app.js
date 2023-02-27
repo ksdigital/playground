@@ -2,6 +2,7 @@ const express          = require('express')
 const path             = require('path')
 const cors             = require('cors')
 const morgan           = require('morgan')
+const compression      = require('compression');
 const https            = require('https');
 const fs               = require('fs');
 
@@ -14,6 +15,7 @@ const app = express()
 
 app.use(morgan('dev'))
 app.use(cors())
+app.use(compression())
 
 app.use(express.static('views/meleb'))
 app.use(express.static('views/umnenok'))
