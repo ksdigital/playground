@@ -1,13 +1,16 @@
 const keys    = require('../config/keys')
 const mailjet = require('node-mailjet')
 
+
+let a = null;
+
 module.exports.connect = function () {
-    mailjet.apiConnect(keys.email.api, keys.email.secret)
+    a = mailjet.apiConnect(keys.email.api, keys.email.secret)
 }
 
 module.exports.sendMessage = async function (body) {
     return new Promise((resolve, reject) => {
-        const request = mailjet
+        const request = a
             .post("send", {'version': 'v3.1'})
             .request({
                 "Messages":[
