@@ -3,19 +3,25 @@ const path             = require('path')
 const cors             = require('cors')
 const morgan           = require('morgan')
 const compression      = require('compression');
+const mailingRoutes    = require('./routes/mailer')
 const https            = require('https');
 const fs               = require('fs');
+const mailer           = require('./tools/email')
 
 const cert = {
     key: fs.readFileSync(path.resolve(__dirname, 'cert', 'private.pem')),
     cert: fs.readFileSync(path.resolve(__dirname, 'cert', 'public.pem'))
 }
 
+mailer.connect();
+
 const app = express()
 
 app.use(morgan('dev'))
 app.use(cors())
 app.use(compression())
+
+app.use('/api/mailer', mailingRoutes)
 
 app.use(express.static('views/meleb'))
 app.use(express.static('views/umnenok'))
@@ -24,21 +30,21 @@ app.use(express.static('views/inquisitor'))
 app.use(express.static('views/certs'))
 app.use(express.static('views/ksd'))
 
-app.get('/meleb', (req, res) => {
-
-
-    res.sendFile(
-        path.resolve(
-            __dirname, 'views', 'meleb', 'index.html'
-        )
-    )
-})
 app.get('/ksd', (req, res) => {
 
 
     res.sendFile(
         path.resolve(
             __dirname, 'views', 'ksd', 'index.html'
+        )
+    )
+})
+app.get('/meleb', (req, res) => {
+
+
+    res.sendFile(
+        path.resolve(
+            __dirname, 'views', 'meleb', 'index.html'
         )
     )
 })
