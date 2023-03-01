@@ -26,12 +26,13 @@ app.use(bodyParser.json())
 
 app.use('/api/mailer', mailingRoutes)
 
+app.use(express.static('views/ksd'))
 app.use(express.static('views/meleb'))
 app.use(express.static('views/umnenok'))
 // app.use(express.static('views/tickets'))
 app.use(express.static('views/inquisitor'))
 app.use(express.static('views/certs'))
-app.use(express.static('views/ksd'))
+
 
 app.get('/ksd', (req, res) => {
 
