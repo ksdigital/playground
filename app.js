@@ -112,4 +112,4 @@ app.get('/certs', (req, res) => {
 const httpsApp = https.createServer(cert, app)
 
 
-module.exports = app
+module.exports = httpsApp
