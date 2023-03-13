@@ -15,12 +15,16 @@ const cert = {
     cert: fs.readFileSync(path.resolve(__dirname, 'cert', 'public.pem'))
 }
 
-mailer.connect();
+//mailer.connect();
+
+let corsOptions = {
+    origin : '*'
+}
 
 const app = express()
 
 app.use(morgan('dev'))
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(compression())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
