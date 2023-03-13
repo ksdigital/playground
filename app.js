@@ -5,6 +5,7 @@ const morgan           = require('morgan')
 const compression      = require('compression');
 const bodyParser       = require('body-parser')
 const mailingRoutes    = require('./routes/mailer')
+const inquisitorRoutes = require('./routes/mailer')
 const https            = require('https');
 const fs               = require('fs');
 const mailer           = require('./tools/email')
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 app.use('/api/mailer', mailingRoutes)
+app.use('/api/inquisitor/mailer', mailingRoutes)
 
 app.use(express.static('views/ksd'))
 app.use(express.static('views/meleb'))
