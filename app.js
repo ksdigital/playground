@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 app.use('/api/mailer', mailingRoutes)
-app.use('/api/inquisitor/mailer', mailingRoutes)
+app.use('/api/inquisitor/mailer', inquisitorRoutes)
 
 app.use(express.static('views/ksd'))
 app.use(express.static('views/meleb'))
