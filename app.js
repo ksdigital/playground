@@ -11,8 +11,8 @@ const fs               = require('fs');
 const mailer           = require('./tools/email')
 
 const cert = {
-    key: fs.readFileSync(path.resolve('etc', 'letsencrypt', 'playground.ksdigital.ru', 'privkey.pem')),
-    cert: fs.readFileSync(path.resolve('etc', 'letsencrypt', 'playground.ksdigital.ru', 'fullchain.pem'))
+    key: fs.readFileSync(path.resolve('/etc', 'letsencrypt', 'playground.ksdigital.ru', 'privkey.pem')),
+    cert: fs.readFileSync(path.resolve('/etc', 'letsencrypt', 'playground.ksdigital.ru', 'fullchain.pem'))
 }
 
 mailer.connect();
