@@ -5,7 +5,7 @@ const morgan           = require('morgan')
 const compression      = require('compression');
 const bodyParser       = require('body-parser')
 const mailingRoutes    = require('./routes/mailer')
-const inquisitorRoutes = require('./routes/mailer')
+const inquisitorRoutes = require('./routes/inquisitor')
 const https            = require('https');
 const fs               = require('fs');
 const mailer           = require('./tools/email')
@@ -15,7 +15,7 @@ const cert = {
     cert: fs.readFileSync(path.resolve(__dirname, 'cert', 'public.pem'))
 }
 
-//mailer.connect();
+mailer.connect();
 
 let corsOptions = {
     origin : '*'
@@ -24,7 +24,7 @@ let corsOptions = {
 const app = express()
 
 app.use(morgan('dev'))
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(compression())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
