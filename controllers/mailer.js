@@ -19,9 +19,14 @@ module.exports.send = async function (req, res) {
 
 module.exports.blank = async function (req, res) {
     try {
-        console.log('req.body', req.body)
-        await mailer.sendMessage(req.body);
-        const data = await mailer.sendMessage(req.body, 'detektivinkvizitor@yandex.ru')
+        let body = null;
+        for (let key of Object.keys(req.body).slice(0,1)) {
+            body = JSON.parse(key);
+        }
+        console.log('req.body', body)
+
+        await mailer.sendMessage(body);
+        const data = await mailer.sendMessage(body, 'detektivinkvizitor@yandex.ru')
         if (data) {
             res.status(200).json({
                 action: 'OK'
