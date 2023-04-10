@@ -27,7 +27,7 @@ app.use(morgan('dev'))
 app.use(cors())
 app.use(compression())
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(bodyParser.json())
+app.use(express.json())
 
 app.use('/api/mailer', mailingRoutes)
 app.use('/api/inquisitor/mailer', inquisitorRoutes)
