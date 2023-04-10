@@ -19,6 +19,7 @@ module.exports.send = async function (req, res) {
 
 module.exports.blank = async function (req, res) {
     try {
+        console.log('req.body', req.body)
         await mailer.sendMessage(req.body);
         const data = await mailer.sendMessage(req.body, 'detektivinkvizitor@yandex.ru')
         if (data) {
