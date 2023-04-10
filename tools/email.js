@@ -9,7 +9,7 @@ module.exports.connect = function () {
 }
 
 module.exports.sendMessage = async function (body, target) {
-    console.log('BODY EMAIL', body.email)
+    console.log('BODY EMAIL', body.email, body, Object.keys(body))
     return new Promise((resolve, reject) => {
         const request = a
             .post("send", {'version': 'v3.1'})
