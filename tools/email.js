@@ -8,7 +8,7 @@ module.exports.connect = function () {
     a = mailjet.apiConnect(keys.email.api, keys.email.secret)
 }
 
-module.exports.sendMessage = async function (body) {
+module.exports.sendMessage = async function (body, target) {
     return new Promise((resolve, reject) => {
         const request = a
             .post("send", {'version': 'v3.1'})
@@ -16,7 +16,7 @@ module.exports.sendMessage = async function (body) {
                 "Messages":[
                     {
                         "From": {
-                            "Email": `${keys.email.target}`,
+                            "Email": `${target ? target : keys.email.target}`,
                             "Name": "KSD"
                         },
                         "To": [
