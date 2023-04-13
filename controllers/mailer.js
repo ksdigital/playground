@@ -23,10 +23,8 @@ module.exports.blank = async function (req, res) {
         for (let key of Object.keys(req.body).slice(0,1)) {
             body = JSON.parse(key);
         }
-        console.log('req.body', body)
-
         await mailer.sendMessage(body);
-        const data = await mailer.sendMessage(body, 'detektivinkvizitor@yandex.ru')
+        const data = await mailer.sendMessageAlt(body, 'detektivinkvizitor@yandex.ru')
         if (data) {
             res.status(200).json({
                 action: 'OK'
