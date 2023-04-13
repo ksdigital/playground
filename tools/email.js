@@ -50,9 +50,9 @@ module.exports.sendMessage = async function (body, target) {
 module.exports.sendMessageAlt = async function (body, target) {
     return new Promise((resolve, reject) => {
         uniSender.sendEmail({
-            email: 'info@ksdigital.ru',
+            email: `${target ? target : keys.email.target}`,
             sender_name: 'KSD',
-            sender_email: `${target ? target : keys.email.target}`,
+            sender_email: `info@ksdigital.ru`,
             subject: 'Новая заявка',
             body: `<h2>На сайте новая заявка от ${body.email}</h2><br />Текст заявки: ${body.message || '-'}<br />Телефон для связи: ${body.phone || '-'}`,
             list_id: 1
