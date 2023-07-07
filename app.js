@@ -16,7 +16,7 @@ const cert = {
 }
 
 mailer.connect();
-
+// mailer.sendMessageCustom({email: 'a@a.ru'}).then((res) => {console.log(res)})
 let corsOptions = {
     origin : '*'
 }

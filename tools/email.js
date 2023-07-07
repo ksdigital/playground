@@ -1,6 +1,8 @@
 const keys    = require('../config/keys')
 const mailjet = require('node-mailjet')
 var UniSender = require('unisender');
+const fetch   = require('node-fetch')
+const { URLSearchParams } = require('url');
 
 
 let a = null;
@@ -40,6 +42,7 @@ module.exports.sendMessage = async function (body, target) {
             })
         request
             .then((result) => {
+                console.log(result)
                 resolve(true)
             })
             .catch((err) => {
@@ -63,6 +66,35 @@ module.exports.sendMessageAlt = async function (body, target) {
             })
             .catch((err) => {
                 console.log('Email error ', err);
+                resolve(false)
+            })
+    })
+}
+module.exports.getContact = async function () {
+    return new Promise((resolve, reject) => {
+        uniSender.getLists().then(x => resolve(x));
+    })
+}
+
+module.exports.sendMessageCustom = async function (body, target) {
+    return new Promise((resolve, reject) => {
+
+        const params = new URLSearchParams();
+        params.append('format', 'json');
+        params.append('api_key', '6cudqey5x36tb66o4zcj1wq84ebkyaedzbajbype');
+        params.append('email', `${target ? target : keys.email.target}`);
+        params.append('sender_name', 'KSDigital');
+        params.append('sender_email', 'info@ksdigital.ru');
+        params.append('subject', 'Новая заявка');
+        params.append('body', `<h2>На сайте новая заявка от ${body.email}</h2><br />Текст заявки: ${body.message || '-'}<br />Телефон для связи: ${body.phone || '-'}`);
+        params.append('list_id', '1');
+
+        fetch('https://api.unisender.com/ru/api/sendEmail', { method: 'POST', body: params })
+            .then((result) => {
+                resolve(true)
+            })
+            .catch((err) => {
+                console.log('ERR', err, )
                 resolve(false)
             })
     })

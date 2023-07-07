@@ -3,7 +3,7 @@ const mailer       = require('../tools/email')
 
 module.exports.send = async function (req, res) {
     try {
-        const data = await mailer.sendMessage(req.body)
+        const data = await mailer.sendMessageCustom(req.body)
         if (data) {
             res.status(200).json({
                 action: 'OK'
@@ -23,8 +23,8 @@ module.exports.blank = async function (req, res) {
         for (let key of Object.keys(req.body).slice(0,1)) {
             body = JSON.parse(key);
         }
-        await mailer.sendMessage(body);
-        const data = await mailer.sendMessageAlt(body, 'detektivinkvizitor@yandex.ru')
+        await mailer.sendMessageCustom(body);
+        const data = await mailer.sendMessageCustom(body, 'detektivinkvizitor@yandex.ru')
         if (data) {
             res.status(200).json({
                 action: 'OK'
