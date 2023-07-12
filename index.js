@@ -6,13 +6,13 @@ const port = process.env.PORT || 443
 
 
 
-redirect.listen(80, () => {
-    console.log(`Redirect run on 80 port`)
-})
+// redirect.listen(80, () => {
+//     console.log(`Redirect run on 80 port`)
+// })
 
 console.log('Preparing...')
 
-app.listen(port, () => {
+app.listen(2000, () => {
     console.log(`Server run on ${port} port`)
 })
 
